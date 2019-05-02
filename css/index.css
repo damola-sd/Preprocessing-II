@@ -170,11 +170,17 @@ img {
 }
 nav {
   display: flex;
-  height: 100px;
   flex-direction: row;
   justify-content: space-between;
   align-items: flex-end;
+  height: 100px;
   margin-bottom: 3rem;
+}
+@media (max-width:550px) {
+  nav {
+    display: flex;
+    flex-diection: column;
+  }
 }
 nav a {
   margin-left: 2rem;
@@ -236,6 +242,7 @@ nav a {
   border-radius: 10px;
 }
 .home .inverse-content {
+  flex-direction: column-reverse;
   padding-bottom: 30px;
   border-bottom: 2px dashed #C0C0C0;
 }
