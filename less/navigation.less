@@ -11,12 +11,17 @@ nav {
 
     @media @mobile {
         display: flex;
-        flex-diection: column;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
     }
     a {
         margin-left: 2rem;
         text-decoration: none;
         font-size: 2rem;
         color: @font-color;
+        @media @mobile {
+            margin-left: 5rem;
+        }
     }
 }

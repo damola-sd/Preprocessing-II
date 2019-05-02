@@ -9,7 +9,9 @@ nav {
 @media (max-width:550px) {
   nav {
     display: flex;
-    flex-diection: column;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
   }
 }
 nav a {
@@ -17,4 +19,9 @@ nav a {
   text-decoration: none;
   font-size: 2rem;
   color: #212529;
+}
+@media (max-width:550px) {
+  nav a {
+    margin-left: 5rem;
+  }
 }
