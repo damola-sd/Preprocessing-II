@@ -7,28 +7,35 @@
     h2 {
       margin-top: @small-margin;
     }
-
+    
     p{
       margin-bottom: @small-margin;
     }
   }
-
+  
   .content-section {
     margin: 30px 0;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-
-   
+    @media @mobile {
+      flex-direction: column;
+    }
     
     .text-content {
       width: 48%;
       padding-right: 1%;
+      @media @mobile {
+        width: auto;
+      }
     }
 
     .img-content {
       width: 48%;
       padding-left: 1%;
+      @media @mobile {
+        width: auto;
+      }
 
       img {
         border-radius: 10px;
@@ -54,6 +61,9 @@
   .content-destination {
     width: 75%;
     margin: 0 auto 30px;
+    @media @mobile {
+      width: auto;
+    }
 
     img {
       border-radius: 10px;
@@ -66,10 +76,17 @@
     display: flex;
     justify-content: space-between;
     .create-button(@button-bg);
+    @media @mobile {
+      flex-direction: column;
+      align-items: center;
+    }
 
     .destination {
       width: 30%;
       margin-bottom: 30px;
+      @media @mobile {
+        width: 80%;
+      }
     }
   }
 }// home
