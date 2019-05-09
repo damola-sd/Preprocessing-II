@@ -1,0 +1,27 @@
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-end;
+  height: 100px;
+  margin-bottom: 3rem;
+}
+@media (max-width:550px) {
+  nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+nav a {
+  margin-left: 2rem;
+  text-decoration: none;
+  font-size: 2rem;
+  color: #212529;
+}
+@media (max-width:550px) {
+  nav a {
+    margin-left: 5rem;
+  }
+}

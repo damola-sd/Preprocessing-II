@@ -1,1 +1,12 @@
 // Mixins in here
+.create-button(@button-bg) {
+    .btn {
+        cursor: pointer;
+        border: @normal-border solid @shark ;
+        border-radius: 4rem;
+        background-color: @button-bg;
+        padding: 1.5rem;
+        font-size: 1.5rem;
+        text-align: center;
+    }
+}

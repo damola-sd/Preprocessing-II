@@ -1,1 +1,27 @@
 // Navigation Styles here
+
+@import "variables.less";
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+    height: 100px;
+    margin-bottom: 3rem;
+
+    @media @mobile {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+    a {
+        margin-left: 2rem;
+        text-decoration: none;
+        font-size: 2rem;
+        color: @font-color;
+        @media @mobile {
+            margin-left: 5rem;
+        }
+    }
+}
